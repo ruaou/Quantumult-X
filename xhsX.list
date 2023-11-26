@@ -1,2 +1,2 @@
 # 小红书精简占用
-host,fe-static.xhscdn.com url reject
+host,fe-static.xhscdn.com,reject
