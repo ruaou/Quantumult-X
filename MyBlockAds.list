@@ -1,0 +1,224 @@
+/***********************************
+
+> 脚本名称：自用app去广告重写
+> 软件版本：v0.0.2
+> 脚本作者：kira（copy自RuCu6、walala）
+> 解锁说明：去广告、净化合集，以下app请使用单独配置文件：高德地图,哔哩哔哩,网易云音乐,微博,YouTube,知乎（如果广告仍然存在，请清除缓存或卸载应用重新安装）（如果广告仍然存在，请清除缓存或卸载应用重新安装）
+> 更新时间：2023-11-26 15:00
+> 特别提醒：如需转载请注明出处，谢谢合作！
+> 使用声明：🎇🎇🎇
+          本脚本仅供学习交流使用，禁止转载、售卖
+          🎇🎇🎇
+
+
+# ======= 0：======= #
+# ======= A：amdc、爱思助手、、阿里巴巴、阿里云盘、爱奇艺、Apple、安全浏览限制解除======= #
+# ======= B：百度、百度贴吧、哔哩哔哩 ====== #
+# ======= C：菜鸟裹裹 ======= #
+# ======= D：======= #
+# ======= E：======= #
+# ======= F：Foreca & Google ======= #
+# ======= G：广告联盟======= #
+# ======= H：海尔智家 ====== #
+# ======= I ====== #
+# ======= J：建设银行 ====== #
+# ======= K：======= #
+# ======= L：蓝奏云 ======= # 
+# ======= M：美团、美颜相机 ====== #
+# ======= N：======= #
+# ======= O：Outlook ======= #
+# ======= P：======= #
+# ======= Q：======= #
+# ======= R：======= #
+# ======= S：什么值得买 ======= #
+# ======= T：腾讯 ======= #
+# ======= U：======= #
+# ======= V：======= #
+# ======= U：======= #
+# ======= W：网易云音乐 ======= #
+# ======= X：小米、迅雷·解除版权限制 ======= #
+# ======= Y：优酷&菜鸟、云闪付、有品电子秤 ====== #
+# ======= Z：知乎 ====== #
+
+
+
+# ======= A ======= #
+# 阿里巴巴
+HOST, ossgw.alicdn.com, REJECT
+HOST, ems.youku.com, REJECT
+HOST, hudong.alicdn.com, REJECT
+HOST-SUFFIX, ut.taobao.com, REJECT
+# 阿里云盘
+IP-CIDR, 203.107.1.1/24, REJECT
+# 爱奇艺
+HOST, api.iqiyi.com, REJECT
+# Apple
+HOST, advertising.apple.com, REJECT
+HOST, api-adservices.apple.com, REJECT
+HOST, apple.comscoreresearch.com, REJECT
+HOST, banners.itunes.apple.com, REJECT
+HOST, iad.apple.com, REJECT
+HOST, iadcontent.apple.com, REJECT
+HOST, iadctest.qwapi.com, REJECT
+HOST, iadmoo.apple.com, REJECT
+HOST, iadworkbench.apple.com, REJECT
+HOST, launch.apple.com, REJECT
+HOST, qwapi.apple.com, REJECT
+HOST-SUFFIX, advp.apple.com, REJECT
+HOST-SUFFIX, iad-apple.com, REJECT
+HOST-SUFFIX, iadsdk.apple.com, REJECT
+# 安全浏览限制解除
+HOST, lookup.api.bsb.baidu.com, REJECT
+HOST-SUFFIX, u3.ucweb.com, REJECT
+HOST-KEYWORD, safebrowsing., REJECT
+
+# ======= B ======= #
+# 百度
+HOST, mobads.baidu.com, REJECT
+HOST-SUFFIX, pos.baidu.com, REJECT
+# 百度贴吧
+IP-CIDR, 180.76.76.200/32, REJECT
+# 哔哩哔哩
+HOST, mall.bilibili.com, REJECT
+HOST, passport.bilibili.com, REJECT
+
+# ======= C ======= #
+# 彩云天气
+HOST, ad.cyapi.cn, REJECT
+
+# ======= F ======= #
+# Foreca & Google
+HOST, pagead2.googlesyndication.com, REJECT
+HOST, www.googleadservices.com, REJECT
+HOST-SUFFIX, adservice.google.com, REJECT
+HOST-KEYWORD, ads.g.doubleclick, REJECT
+
+# 广告联盟
+HOST, ad.zijieapi.com, REJECT
+HOST, i.snssdk.com, REJECT
+HOST, is.snssdk.com, REJECT
+HOST, open.e.kuaishou.com, REJECT
+HOST-SUFFIX, miaozhen.com, REJECT
+HOST-KEYWORD, -ad-sign.byteimg.com, REJECT
+HOST-KEYWORD, -tos.pstatp.com, REJECT
+HOST-KEYWORD, asiad.byteactivity, REJECT
+HOST-KEYWORD, pangolin-sdk-toutiao, REJECT
+HOST-KEYWORD, pangolin.snssdk.com, REJECT
+HOST-KEYWORD, pglstatp-toutiao, REJECT
+HOST-KEYWORD, video-cn.snssdk.com, REJECT
+
+# ======= H ======= #
+# 海尔智家
+HOST-SUFFIX, ehaier.com, REJECT
+
+# ======= J ======= #
+# 建设银行
+HOST-KEYWORD, adv.ccb.com, REJECT
+# 京东
+HOST, dns.jd.com, REJECT
+IP-CIDR, 101.124.19.122/32, REJECT
+IP6-CIDR, 2402:db40:5100:1011::5/128, REJECT
+
+# ======= L ======= #
+# 蓝奏云
+HOST, statics.woozooo.com, REJECT
+
+# ======= M ======= #
+# 美团
+HOST, al-log.d.meituan.net, REJECT
+HOST, babel-statistics-android.d.meituan.net, REJECT
+HOST, maplocatesdksnapshot.d.meituan.net, REJECT
+HOST, metrics-picture.d.meituan.net, REJECT
+HOST, route-stats.d.meituan.net, REJECT
+# 美颜相机
+HOST, aaid.uyunad.com, REJECT
+HOST, adui.tg.meitu.com, REJECT
+
+# ======= O ======= #
+# Outlook
+HOST, acdn.adnxs.com, REJECT
+HOST, mediation.adnxs.com, REJECT
+HOST, sin3-ib.adnxs.com, REJECT
+
+# ======= S ======= #
+# 什么值得买
+HOST, api.zuihuimai.com, REJECT
+
+# ======= T ======= #
+# 腾讯
+HOST, adsmind.gdtimg.com, REJECT
+HOST, info4.video.qq.com, REJECT
+HOST, info6.video.qq.com, REJECT
+HOST, ios.video.mpush.qq.com, REJECT
+HOST, otheve.beacon.qq.com, REJECT
+HOST, pgdt.gtimg.cn, REJECT
+HOST, tpns.qq.com, REJECT
+HOST, vv6.video.qq.com, REJECT
+HOST-SUFFIX, gdt.qq.com, REJECT
+HOST-SUFFIX, l.qq.com, REJECT
+HOST-KEYWORD, trace.qq.com, REJECT
+HOST-KEYWORD, trace.video.qq.com, REJECT
+IP-CIDR, 47.110.187.87/32, REJECT
+
+# ======= W ======= #
+# 网易云音乐
+HOST, httpdns.music.163.com, REJECT
+HOST, httpdns.n.netease.com, REJECT
+HOST, iadmat.nosdn.127.net, REJECT
+HOST, iadmatapk.nosdn.127.net, REJECT
+HOST, iadmusicmat.music.126.net, REJECT
+HOST, iadmusicmatvideo.music.126.net, REJECT
+HOST-SUFFIX, 163jiasu.com, REJECT
+
+# ======= X ======= #
+# 小米
+HOST, sdkconfig.ad.xiaomi.com, REJECT
+# 迅雷 解除版权限制
+;HOST, hub5btmain.v6.shub.sandai.net, REJECT
+;HOST, hub5emu.v6.shub.sandai.net, REJECT
+;HOST, hub5idx.v6.shub.sandai.net, REJECT
+
+# ======= Y ======= #
+# 优酷 & 菜鸟
+;HOST, acs.youku.com, REJECT
+HOST, acs4baichuan.m.taobao.com, REJECT
+HOST, adsmind.ugdtimg.com, REJECT
+HOST, amdc.m.youku.com, REJECT
+HOST, api.sm.cn, REJECT
+HOST, apiv4-iyes.youku.com, REJECT
+HOST, baichuan-sdk.alicdn.com, REJECT
+HOST, httpdns.alicdn.com, REJECT
+HOST, huichuan-mc.sm.cn, REJECT
+HOST, huichuan.sm.cn, REJECT
+HOST, iyes.youku.com, REJECT
+HOST, m-vali.cp31.ott.cibntv.net, REJECT
+HOST, mc.atm.youku.com, REJECT
+HOST, nbsdk-baichuan.alicdn.com, REJECT
+HOST, pre-acs.youku.com, REJECT
+HOST, vali-g1.cp31.ott.cibntv.net, REJECT
+HOST, vali-ugc.cp31.ott.cibntv.net, REJECT
+HOST, yk-ssp.ad.youku.com, REJECT
+HOST, ykad-data.youku.com, REJECT
+HOST, youku-acs.m.taobao.com, REJECT
+# Picooc有品去除开屏广告
+HOST-SUFFIX, img1.360buyimg.com, REJECT
+HOST-SUFFIX, p1-lm.adukwai.com, REJECT
+# 云闪付 开屏广告
+HOST, ads.95516.com, REJECT
+HOST, switch.cup.com.cn, REJECT
+HOST, tysdk.95516.com, REJECT
+
+
+# ======= Z ======= #
+# 知乎
+HOST, appcloud.zhihu.com, REJECT
+HOST, appcloud2.in.zhihu.com, REJECT
+HOST, crash2.zhihu.com, REJECT
+HOST, mqtt.zhihu.com, REJECT
+HOST, sugar.zhihu.com, REJECT
+HOST, zxid-m.mobileservice.cn, REJECT
+IP-CIDR, 103.41.167.237/32, REJECT
+IP-CIDR, 118.89.204.198/32, REJECT
+IP6-CIDR, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT
+
+***********************************************/
