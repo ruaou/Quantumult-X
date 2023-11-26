@@ -11,7 +11,7 @@
 
 [rewrite_local]
 
-^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ url script-request-header wyyvipdemo.js
+^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ url script-request-header wyyx.js
 [mitm] 
 hostname = *.music.163.com
 
