@@ -12,7 +12,7 @@
 
 [rewrite_local]
 
-^https:\/\/tide-api\.moreless\.io\/v[12]\/(meditation\/albums|scenes) url script-request-header Cxvipdemo.js
+^https:\/\/tide-api\.moreless\.io\/v[12]\/(meditation\/albums|scenes) url script-request-header Cxx.js
 
 [mitm]
 
