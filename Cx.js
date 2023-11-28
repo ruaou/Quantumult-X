@@ -14,7 +14,7 @@
 # > 拦截潮汐-开屏日图
 ^https:\/\/tide-api\.moreless\.io\/v1\/dailypics url reject
 # > 解锁会员信息（单独使用是自慰，需要配合共享会员ck脚本使用https://raw.githubusercontent.com/ruaou/Quantumult-X/Sharedemo/Cxx.js）
-^https:\/\/tide-api\.moreless\.io\/v1\/(users\/self|user_premium_tip) url script-response-body cx.js
+^https:\/\/tide-api\.moreless\.io\/v1\/(users\/self|user_premium_tip) url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/CrackVip/cx.js
 
 [mitm]
 hostname = tide-api.moreless.io
