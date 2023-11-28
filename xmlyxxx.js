@@ -20,6 +20,7 @@ hostname = 42.81.26.*, 114.80.99.*, 180.153.*.*, *.xima*.*, *.xmcdn.*
 
 var body=$response.body;
 body = body.replace(/vipLevel\":\d/g,'vipLevel":5');
+body = body.replace(/mvpGrade\":\d/g,'mvpGrade":10');
 body = body.replace(/isVip\":\w+/g,'isVip":true');
 body = body.replace(/level\":\d/g,'level":5');
 body = body.replace(/vipExpireTime\":\d+/g,'vipExpireTime":4094530924000');
