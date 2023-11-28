@@ -1,4 +1,4 @@
-/***********************************
+/************
 
 > 脚本名称：修改用户会员、听书等级显示为满级@kira（自慰）
 > 软件版本：9.1.87
@@ -15,9 +15,9 @@
 ^https?:\/\/((.+ximalaya.+)|114\.80\.99\.*\/mobile-user\/v2\/homePage|m\business-vip-presale-mobile-web\/page\/.*|business-master-class-mobile-web\/V2\/home\/index\/.*|starwar\/task\/listen\/listenTime\/.*|mobile-user\/v2\/artist\/homepage\/.*|mobile-user\/v2\/artist\/intro\/.*|vip\/v1\/recommand\/.*)$ url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/CrackVip/xmlyxxx.js
 
 [mitm]
-hostname = mobile.ximalaya.com,114.80.99.*,m.ximalaya.com
+hostname = 42.81.26.*, 114.80.99.*, 180.153.*.*, *.xima*.*, *.xmcdn.*
+************/
 
-*******************************/
 var body=$response.body;
 body = body.replace(/vipLevel\":\d/g,'vipLevel":5');
 body = body.replace(/isVip\":\w+/g,'isVip":true');
