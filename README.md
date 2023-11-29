@@ -9,4 +9,4 @@
 
 [![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=ruaou&theme=nightowl)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-👾⚡你是第 ![Visitor Count](https://profile-counter.glitch.me/ruaou/count.svg) 访问者⚡👾
+👾⚡你是今天第 ![Visitor Count](https://profile-counter.glitch.me/ruaou/count.svg) 访问者⚡👾
