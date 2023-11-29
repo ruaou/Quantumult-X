@@ -55,7 +55,7 @@
 
 
 
-
+          
 
 
 
@@ -64,7 +64,7 @@
 
 
 var url = $request.url;
-var kiraii = /^https:\/\/((mobile|mobwsa)\.ximalaya\.com|114\.80\.\*.\*)\/mobile-user\/v2\/homePage/;
+var kiraii = /^https?:\/\/(114\.80\..*|(mobile|m|mobwsa)\.ximalaya\.com)\/mobile-user\/v2\/homePage/;
 
 if (kiraii.test(url)) {
     var kira = JSON.parse($response.body);
