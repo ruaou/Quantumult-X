@@ -63,11 +63,12 @@
 
 
 
+^https:\/\/((mobile|m)\.ximalaya\.com\/(mobile-user\/v2\/(homePage|artist)|business-vip-presale-mobile-web\/page))\/.*$ url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/CrackVip/xmlyxxx.js
 
 
 var url = $request.url;
 
-if (url.indexOf('https://mobile.ximalaya.com/mobile-user/v2/homePage/') !== -1) {
+if (url.indexOf('https://(mobile.ximalaya.com|114.80.*.*)/mobile-user/v2/homePage/') !== -1) {
     var kira = JSON.parse($response.body);
     var kirass = kira.data.vipInfo;
     kirass.isVip = true;
