@@ -13,9 +13,6 @@
 
 
 
-
-[mitm]
-hostname = 114.80.*.*
 ************/
 
 
@@ -68,7 +65,7 @@ hostname = 114.80.*.*
 
 var url = $request.url;
 
-if (url.indexOf('https://(mobile.ximalaya.com|114.80.*.*)/mobile-user/v2/homePage/') !== -1) {
+if (url.indexOf('https://((mobile|mobwsa).ximalaya.com|114.80.*.*)/mobile-user/v2/homePage/') !== -1) {
     var kira = JSON.parse($response.body);
     var kirass = kira.data.vipInfo;
     kirass.isVip = true;
