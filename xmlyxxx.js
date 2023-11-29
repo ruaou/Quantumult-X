@@ -11,6 +11,10 @@
           🎇🎇🎇️
 
 
+[rewrite_local]
+
+^https?:\/\/(114\.80\..*|(mobile|m|mobwsa)\.ximalaya\.com)\/(mobile-user\/v2\/(homePage|artist)|business-vip-presale-mobile-web\/page)\/.*$ url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/CrackVip/xmlyxxx.js
+[mitm]
 
 hostname = 42.81.26.*, 114.80.*.*, 180.153.*.*, *.xima*.*, *.xmcdn.*
 ************/
