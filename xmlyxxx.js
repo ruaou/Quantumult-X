@@ -64,8 +64,9 @@
 
 
 var url = $request.url;
+var kiraii = /^https:\/\/((mobile|mobwsa)\.ximalaya\.com|114\.80\..*)\/mobile-user\/v2\/homePage/;
 
-if (url.indexOf('https://((mobile|mobwsa).ximalaya.com|114.80.*.*)/mobile-user/v2/homePage/') !== -1) {
+if (kiraii.test(url)) {
     var kira = JSON.parse($response.body);
     var kirass = kira.data.vipInfo;
     kirass.isVip = true;
@@ -94,7 +95,7 @@ if (url.indexOf('https://((mobile|mobwsa).ximalaya.com|114.80.*.*)/mobile-user/v
     body = body.replace(/subtitle\":"([^"]*)"/g, 'subtitle":"会员将于2099-10-01到期"');
     body = body.replace(/vipStatus\":\d/g, 'vipStatus":2');
     body = body.replace(/userLevelIcon"\s*:\s*"[^"]*"/g, 'userLevelIcon":"http://imagev2.xmcdn.com/storages/2fd2-audiofreehighqps/93/C6/GKwRIDoF9MpUAAAP_AEhz-MP.png!op_type=0&magick=webp"');
-    $done(body);
+    $done({ body: body });
 } else {
     $done({});
 }
