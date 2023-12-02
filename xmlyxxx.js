@@ -68,7 +68,7 @@ hostname = 42.81.26.*, 114.80.*.*, 180.153.*.*, *.xima*.*, *.xmcdn.*
 
 
 var url = $request.url;
-var kiraii = /^https?:\/\/(114\.80\..*|(mobile|m|mobwsa)\.ximalaya\.com)\/mobile-user\/v2\/homePage/;
+var kiraii = /^https?:\/\/((114\.80\..*|mobile|m|mobwsa)\.ximalaya\.com)\/mobile-user\/v2\/homePage/;
 
 if (kiraii.test(url)) {
     var kira = JSON.parse($response.body);
