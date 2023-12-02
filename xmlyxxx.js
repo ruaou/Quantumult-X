@@ -68,7 +68,8 @@ hostname = 42.81.26.*, 114.80.*.*, 180.153.*.*, *.xima*.*, *.xmcdn.*
 
 
 var url = $request.url;
-var kiraii = /^https?:\/\/((114\.80\..*|mobile|m|mobwsa)\.ximalaya\.com)\/mobile-user\/v2\/homePage/;
+var kiraii = /https?:\/\/((114\.80\.\d+\.\d+|mobile|m|mobwsa)\.ximalaya\.com)\/mobile-user\/v2\/homePage/;
+var kirapp = /https:\/\/(114\.80\.\d+\.\d+|mobile\.ximalaya\.com)\/mobile-user\/v2\/artist/;
 
 if (kiraii.test(url)) {
     var kira = JSON.parse($response.body);
@@ -83,7 +84,7 @@ if (kiraii.test(url)) {
         "backgroundPicUrl": "https://imagev2.xmcdn.com/storages/93d1-audiofreehighqps/DC/B8/GMCoOSIJGUxwAADDBQJ3hhpR.png"
     };
     $done({ body: JSON.stringify(kira) });
-} else if (url.indexOf('https://mobile.ximalaya.com/mobile-user/v2/artist/') !== -1) {
+} else if (kirapp.test(url)) {
     var kira = JSON.parse($response.body);
     var kirass = kira.data.xiaoyaGradeInfo;
     kirass.grade = 10;
