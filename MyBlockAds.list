@@ -45,10 +45,13 @@ HOST, ossgw.alicdn.com, REJECT
 HOST, ems.youku.com, REJECT
 HOST, hudong.alicdn.com, REJECT
 HOST-SUFFIX, ut.taobao.com, REJECT
+
 # > 阿里云盘
 IP-CIDR, 203.107.1.1/24, REJECT
+
 # > 爱奇艺
 HOST, api.iqiyi.com, REJECT
+
 # > Apple
 HOST, advertising.apple.com, REJECT
 HOST, api-adservices.apple.com, REJECT
@@ -64,6 +67,7 @@ HOST, qwapi.apple.com, REJECT
 HOST-SUFFIX, advp.apple.com, REJECT
 HOST-SUFFIX, iad-apple.com, REJECT
 HOST-SUFFIX, iadsdk.apple.com, REJECT
+
 # > 安全浏览限制解除
 HOST, lookup.api.bsb.baidu.com, REJECT
 HOST-SUFFIX, u3.ucweb.com, REJECT
@@ -73,6 +77,7 @@ HOST-KEYWORD, safebrowsing., REJECT
 # > 百度
 HOST, mobads.baidu.com, REJECT
 HOST-SUFFIX, pos.baidu.com, REJECT
+
 # > 百度贴吧
 IP-CIDR, 180.76.76.200/32, REJECT
 
@@ -106,12 +111,14 @@ HOST-KEYWORD, video-cn.snssdk.com, REJECT
 HOST, amap-aos-info-nogw.amap.com, REJECT
 HOST, awaken.amap.com, REJECT
 HOST, free-aos-cdn-image.amap.com, REJECT
+
 # > 工商银行 开屏广告
 HOST, pageviewp.icbc.com.cn, REJECT
 
 # ======= H ======= #
 # > 海尔智家
 HOST-SUFFIX, ehaier.com, REJECT
+
 # > httpdns
 HOST-KEYWORD, httpdns., REJECT
 HOST-KEYWORD, httpdns-, REJECT
@@ -119,6 +126,7 @@ HOST-KEYWORD, httpdns-, REJECT
 # ======= J ======= #
 # > 建设银行
 HOST-KEYWORD, adv.ccb.com, REJECT
+
 # > 京东
 HOST, dns.jd.com, REJECT
 IP-CIDR, 101.124.19.122/32, REJECT
@@ -128,6 +136,9 @@ IP6-CIDR, 2402:db40:5100:1011::5/128, REJECT
 # > 蓝奏云
 HOST, statics.woozooo.com, REJECT
 
+# > 两步路
+host-suffix, admobile.top url reject
+
 # ======= M ======= #
 # > 美团
 HOST, al-log.d.meituan.net, REJECT
@@ -135,6 +146,7 @@ HOST, babel-statistics-android.d.meituan.net, REJECT
 HOST, maplocatesdksnapshot.d.meituan.net, REJECT
 HOST, metrics-picture.d.meituan.net, REJECT
 HOST, route-stats.d.meituan.net, REJECT
+
 # > 美颜相机
 HOST, aaid.uyunad.com, REJECT
 HOST, adui.tg.meitu.com, REJECT
@@ -172,12 +184,14 @@ HOST, iadmatapk.nosdn.127.net, REJECT
 HOST, iadmusicmat.music.126.net, REJECT
 HOST, iadmusicmatvideo.music.126.net, REJECT
 HOST-SUFFIX, 163jiasu.com, REJECT
+
 # > 微博 开屏广告
 HOST-SUFFIX, biz.weibo.com, REJECT
 
 # ======= X ======= #
 # > 小米
 HOST, sdkconfig.ad.xiaomi.com, REJECT
+
 # > 迅雷 解除版权限制
 ;HOST, hub5btmain.v6.shub.sandai.net, REJECT
 ;HOST, hub5emu.v6.shub.sandai.net, REJECT
@@ -204,13 +218,16 @@ HOST, vali-ugc.cp31.ott.cibntv.net, REJECT
 HOST, yk-ssp.ad.youku.com, REJECT
 HOST, ykad-data.youku.com, REJECT
 HOST, youku-acs.m.taobao.com, REJECT
+
 # > Picooc有品去除开屏广告
 HOST-SUFFIX, img1.360buyimg.com, REJECT
 HOST-SUFFIX, p1-lm.adukwai.com, REJECT
+
 # > 云闪付 开屏广告
 HOST, ads.95516.com, REJECT
 HOST, switch.cup.com.cn, REJECT
 HOST, tysdk.95516.com, REJECT
+
 # Yandex
 HOST, yandexmetrica.com, REJECT
 
