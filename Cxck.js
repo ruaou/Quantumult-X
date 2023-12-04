@@ -9,10 +9,10 @@
           本脚本仅供学习交流使用，禁止转载、售卖
           🎇️🎇️🎇️️
 
+# [+]2023.12.4  增加睡眠故事响应
 
 [rewrite_local]
-
-^https:\/\/tide-api\.moreless\.io\/v[12]\/(meditation\/albums|scenes) url script-request-header Cxx.js
+^https:\/\/tide-api\.moreless\.io\/v[12]\/(meditation\/albums|scenes|sleep_stories) url script-request-header Cxck.js
 
 [mitm]
 
