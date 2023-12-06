@@ -8,9 +8,7 @@ TG棰戦亾缇わ細https://t.me/iosapp520
 浣滆€卛os-馃悢绁�
 
 
-
-^http[s]?:\/\/.+dushu.+(v101|v100|program/v100)\/(content|play/duration|index|list|userInfo|vipInfo|info|ceiltip|mainList|getMarketInfoByType) url script-response-body est-header https://raw.githubusercontent.com/ruaou/Quantumult-X/Sharedem
-|resource-orchestration-system/book/v101/content
+^http[s]?:\/\/.+dushu.+(v101|v100|program/v100)\/(content|play/duration|index|list|userInfo|vipInfo|info|ceiltip|mainList|getMarketInfoByType) url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/Sharedem/Fdck.js
 
 ^http[s]?:\/\/.+dushu.+(v101\/content|book\/v100\/info|\/play\/duration|\/v100\/index|lilei-talk-orch\/program\/v100\/info|resource-orchestration-system/book/v101/content).*$ url script-request-body https://fk.gjds.vip/fdck.js
 
