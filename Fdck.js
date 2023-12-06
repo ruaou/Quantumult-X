@@ -1,11 +1,6 @@
 /*
 
 
-TG棰戦亾缇わ細https://t.me/iosapp520
-
-妯婄櫥璇讳功 瑙ｉ攣浼氬憳 
-
-浣滆€卛os-馃悢绁�
 
 
 ^http[s]?:\/\/.+dushu.+(v101|v100|program/v100)\/(content|play/duration|index|list|userInfo|vipInfo|info|ceiltip|mainList|getMarketInfoByType) url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/Sharedem/Fdck.js
