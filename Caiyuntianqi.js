@@ -1,25 +1,41 @@
-/*************************************
+/************
 
-项目名称：彩云天气+彩云天气Pro
-下载地址：https://t.cn/A66d95hV
-版本支持：7.6.0
-更新日期：2023-12-02
-脚本作者：kirass
-电报频道：https://t.me/kirass
-使用声明：⚠️仅供参考，🈲转载与售卖！
+> 脚本名称：彩云天气+彩云天气Pro
+> 软件版本：7.7.0
+> 脚本作者：kira
+> 解锁说明：修改用户会员等级、听书等级
+> 更新时间：2023-12-14
+> 特别提醒：如需转载请注明出处，谢谢合作！
+> 使用声明：🎇🎇🎇
+          本脚本仅供学习交流使用，禁止转载、售卖
+          🎇🎇🎇️
+          
 
-**************************************
+
+
+
+
 
 [rewrite_local]
 # VIP信息
-^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners)|p\/v\d\/(vip_info|user_info)) url script-response-body https://raw.githubusercontent.com/kirass/Rewrite/main/caiyuntianqi.js
+^https?:\/\/(biz|wrapper|starplucker)\.(cyapi|caiyunapp)\.(cn|com)\/(.+\/(user\?app_name|activity\?app_name|visitors|operation\/banners)|p\/v\d\/(vip_info|user_info)) url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/CrackVip/Caiyuntianqi.js
 # SVIP地图-48小时预报(方法来源:苍井灰灰)
-^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images) url script-request-header https://raw.githubusercontent.com/kirass/Rewrite/main/caiyuntianqi.js
+^https?:\/\/(api|wrapper)\.(cyapi|caiyunapp)\.(cn|com)\/v\d\/(satellite|nafp\/origin_images) url script-request-header https://raw.githubusercontent.com/ruaou/Quantumult-X/CrackVip/Caiyuntianqi.js
 
 [mitm]
 hostname = *.cyapi.cn, *.caiyunapp.com
 
-*************************************/
+************/
+
+
+
+
+
+
+
+
+
+
 
 
 const kira = {};
