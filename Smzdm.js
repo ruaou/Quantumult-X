@@ -26,6 +26,7 @@ deletePropertyIfExist(obj.data, "ad_black_list");
 deletePropertyIfExist(obj.data, "banner_v2");
 deletePropertyIfExist(obj.data, "hongbao");
 deletePropertyIfExist(obj.data, "operation_float_7_0");
+deletePropertyIfExist(obj.data, "rows");
 
 filterAndFixPos(obj.data.functions, "message");
 filterAndFixPos(obj.data.services, "articel_manage");
@@ -35,8 +36,6 @@ filterAndFixPos(obj.data.component, "circular_banner");
 filterAndFixPos(obj.data.component, "fixed_banner");
 filterAndFixPos(obj.data.component, "filter");
 filterAndFixPos(obj.data.component, "list");
-
-deletePropertyIfExist(obj.data, "rows");
 
 if (obj?.data?.rows?.length > 0) {
   obj.data.rows = obj.data.rows.filter(
@@ -48,7 +47,6 @@ deletePropertyIfExist(obj.data, "data");
 
 $done({ body: JSON.stringify(obj) });
 
-// 修正位置
 function fixPos(arr) {
   for (let i = 0; i < arr.length; i++) {
     arr[i].pos = i + 1;
