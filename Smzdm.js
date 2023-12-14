@@ -6,36 +6,46 @@ if (!$response.body) {
 
 let obj = JSON.parse($response.body);
 
-function deletePropertyIfExist(obj, property) {
-  if (obj && obj.data && obj.data[property]) {
-    delete obj.data[property];
-  }
+if (url.includes("/vip") && obj.data.big_banner) {
+  delete obj.data.big_banner;
 }
 
-function filterAndFixPos(arr, type) {
-  if (arr) {
-    obj.data[arr] = arr.filter((item) => item.type === type);
-    fixPos(obj.data[arr]);
-  }
+if (obj.data.functions) {
+  obj.data.functions = obj.data.functions.filter((item) => item.type === "message");
+  fixPos(obj.data.functions);
 }
 
-deletePropertyIfExist(obj, "big_banner");
-deletePropertyIfExist(obj.data, "widget");
-deletePropertyIfExist(obj.data, "operation_float_screen");
-deletePropertyIfExist(obj.data, "ad_black_list");
-deletePropertyIfExist(obj.data, "banner_v2");
-deletePropertyIfExist(obj.data, "hongbao");
-deletePropertyIfExist(obj.data, "operation_float_7_0");
-deletePropertyIfExist(obj.data, "rows");
+if (obj.data.services) {
+  obj.data.services = obj.data.services.filter((item) => item.type === "articel_manage" || item.type === "199794" || item.type === "199796");
+  fixPos(obj.data.services);
+}
 
-filterAndFixPos(obj.data.functions, "message");
-filterAndFixPos(obj.data.services, "articel_manage");
-filterAndFixPos(obj.data.services, "199794");
-filterAndFixPos(obj.data.services, "199796");
-filterAndFixPos(obj.data.component, "circular_banner");
-filterAndFixPos(obj.data.component, "fixed_banner");
-filterAndFixPos(obj.data.component, "filter");
-filterAndFixPos(obj.data.component, "list");
+if (url.includes("/vip/bottom_card_list") && obj.data.rows) {
+  delete obj.data.rows;
+}
+
+if (url.includes("/v3/home")) {
+  obj.data.component = obj.data.component.filter((item) => 
+    item.zz_type === "circular_banner" || item.zz_type === "fixed_banner" || item.zz_type === "filter" || item.zz_type === "list"
+  );
+  fixPos(obj.data.component);
+}
+
+if (url.includes("/util/update") && obj.data.ad_black_list) {
+  delete obj.data.ad_black_list;
+}
+
+if (obj.data.widget) {
+  delete obj.data.widget;
+}
+
+if (obj.data.operation_float_screen) {
+  delete obj.data.operation_float_screen;
+}
+
+if (url.includes("/home/list") && obj.data.banner_v2) {
+  delete obj.data.banner_v2;
+}
 
 if (obj?.data?.rows?.length > 0) {
   obj.data.rows = obj.data.rows.filter(
@@ -43,7 +53,18 @@ if (obj?.data?.rows?.length > 0) {
   );
 }
 
-deletePropertyIfExist(obj.data, "data");
+if (url.includes("/publish") && obj.data.hongbao) {
+  delete obj.data.hongbao;
+}
+
+if (url.includes("/loading") && obj.data) {
+  delete obj.data;
+}
+
+if (url.includes("/util/update") &&
+obj.data.operation_float_7_0) {
+  delete obj.data.operation_float_7_0;
+}
 
 $done({ body: JSON.stringify(obj) });
 
