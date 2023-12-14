@@ -1,19 +1,14 @@
-/************
+/*************************************
 
-> 脚本名称：彩云天气+彩云天气Pro
-> 软件版本：7.7.0
-> 脚本作者：kira
-> 解锁说明：解锁彩云天气+彩云天气Pro
-> 更新时间：2023-12-14
-> 特别提醒：如需转载请注明出处，谢谢合作！
-> 使用声明：⚠️⚠️⚠️
-          本脚本仅供学习交流使用，禁止转载、售卖
-          ⚠️⚠️⚠️
+项目名称：彩云天气+彩云天气Pro
+下载地址：https://t.cn/A66d95hV
+版本支持：7.6.0
+更新日期：2023-12-02
+脚本作者：kirass
+电报频道：https://t.me/kirass
+使用声明：⚠️仅供参考，🈲转载与售卖！
 
-
-
-
-
+**************************************
 
 [rewrite_local]
 # VIP信息
@@ -24,17 +19,7 @@
 [mitm]
 hostname = *.cyapi.cn, *.caiyunapp.com
 
-************/
-
-
-
-
-
-
-
-
-
-
+*************************************/
 
 
 const kira = {};
@@ -60,7 +45,7 @@ if (typeof $response == "undefined") {
       break;
     case userUrl.test(url):
       kirass.result = { ...kirass.result,  is_vip: true,  vip_expired_at: 4094546691,  svip_given: 9999,  is_xy_vip: true,  xy_svip_expire: 4094546691,  wt: {  ...kirass.result.wt,  vip: {  ...kirass.result.wt.vip,  "expired_at" : 0,  "enabled" : true,  "svip_apple_expired_at" : 4094546691,  "is_auto_renewal" : true,  "svip_expired_at" : 4094546691    },    svip_given: 9999,  },  is_phone_verified: true,  vip_take_effect: 1,  is_primary: true,  xy_vip_expire: 4094546691,  svip_expired_at: 4094546691,  svip_take_effect: 1,  vip_type: "s",  phone_num: "13145200000",  bound_status: {  ...kirass.result.bound_status,  caiyun: {  ...kirass.result.bound_status.caiyun,  "is_bound" : true}}};
-      break;
+  break;
     }
   kira.body = JSON.stringify(kirass);
 }
