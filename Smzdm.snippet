@@ -1,0 +1,40 @@
+/************
+
+> 脚本名称：什么值得买净化
+> 软件版本：9.1.93
+> 脚本作者：怎么肥事
+> 解锁说明：修改用户会员等级、听书等级
+> 更新时间：2023-12-13 19:44
+> 特别提醒：如需转载请注明出处，谢谢合作！
+> 使用声明：🎇🎇🎇
+          本脚本仅供学习交流使用，禁止转载、售卖
+          🎇🎇🎇️
+
+************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+[rewrite_local]
+
+^https:\/\/app-api\.smzdm\.com\/util\/loading url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/Adblock/Smzdm.js
+^https:\/\/haojia-api\.smzdm\.com\/home\/list url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/Adblock/Smzdm.js
+^https:\/\/app-api\.smzdm\.com\/util\/update url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/Adblock/Smzdm.js
+^https:\/\/homepage-api\.smzdm\.com\/v3\/home url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/Adblock/Smzdm.js
+^https:\/\/user-api\.smzdm\.com\/vip url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/Adblock/Smzdm.js
+^https:\/\/user-api\.smzdm\.com\/vip\/bottom_card_list url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/Adblock/Smzdm.js
+^https:\/\/article-api\.smzdm\.com\/publish\/get_bubble url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/Adblock/Smzdm.js
+
+
+[mitm]
+
+hostname = haojia-api.smzdm.com, homepage-api.smzdm.com, app-api.smzdm.com, user-api.smzdm.com, article-api.smzdm.com
