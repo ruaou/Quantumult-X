@@ -66,21 +66,7 @@ if (body) {
                 console.log("discovery-feed:" + c);
             }
             break;
-
-        case /mobile-user\/v\d\/homePage/.test($request.url):
-            try {
-                let m = new Set([210, 217, 276, 215]),
-                    g = JSON.parse(body);
-                if (g.data.serviceModule.entrances) {
-                    let f = g.data.serviceModule.entrances.filter(e => m.has(e.id));
-                    g.data.serviceModule.entrances = f;
-                }
-                body = JSON.stringify(g);
-            } catch (n) {
-                console.log("mobile-user:" + n);
-            }
-            break;
-
+                        
         default:
             $done({});
     }
