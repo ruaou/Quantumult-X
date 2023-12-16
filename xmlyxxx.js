@@ -167,10 +167,10 @@ if (kiraaa.test(url)) {
     kiravv.grade = 10;
     kirass.mvpGrade = 10;
     kirass.xiaoyaGradeInfo = kiravv;
-    var kiravv = kirass.vipInfo;
-    kiravv.isVip = true;
-    kiravv.iconUrl = "http://imagev2.xmcdn.com/storages/2fd2-audiofreehighqps/93/C6/GKwRIDoF9MpUAAAP_AEhz-MP.png!op_type=0&magick=webp";
-    kirass.vipInfo = kiravv;
+    var kiraii = kirass.vipInfo;
+    kiraii.isVip = true;
+    kiraii.iconUrl = "http://imagev2.xmcdn.com/storages/2fd2-audiofreehighqps/93/C6/GKwRIDoF9MpUAAAP_AEhz-MP.png!op_type=0&magick=webp";
+    kirass.vipInfo = kiraii;
     $done({ body: JSON.stringify(kira) });
 } else if (url.indexOf('https://m.ximalaya.com/businevv-vip-presale-mobile-web/page/') !== -1) {
     var body = $response.body;
