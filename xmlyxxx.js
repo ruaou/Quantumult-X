@@ -52,7 +52,7 @@
 
 var url = $request.url;
 var kiraaa = /https:\/\/(114\.80\.\d+\.\d+|(mobile|m|mobwsa)\.ximalaya\.com)\/mobile-user\/v2\/homePage/;
-var kirabb = /https:\/\/(114\.80\.\d+\.\d+|mobile\.ximalaya\.com)\/mobile-user\/v2\/artist/;
+var kirabb = /https:\/\/(114\.80\.\d+\.\d+|mobile\.ximalaya\.com)\/mobile-user\/v2\/artist/homePage/;
 
 if (kiraaa.test(url)) {
     var kira = JSON.parse($response.body);
