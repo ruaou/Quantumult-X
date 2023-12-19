@@ -49,7 +49,7 @@ if (body) {
         case /discovery-feed\/v\d\/mix/.test($request.url):
             try {
                 let d = JSON.parse(body),
-                    o = new Set([1001, 1005, 1009, 1013, 1015, 1022, 1e5]);
+                    o = new Set([1001, 3, 1014, 4014, 1e5]);
                 if (d.header && d.header.length >= 2) {
                     d.header[1].item.list = d.header[1].item.list.filter(e => o.has(e.id));
                     for (let l = 0; l < d.header[1].item.list.length; l++)
