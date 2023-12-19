@@ -51,8 +51,8 @@
 
 
 var url = $request.url;
-var kiraaa = /https:\/\/(114\.80\.\d+\.\d+|140\.249\d+\.\d+|(mobile|m|mobwsa)\.ximalaya\.com)\/mobile-user\/v2\/homePage/;
-var kirabb = /https:\/\/(114\.80\.\d+\.\d+|140\.249\d+\.\d+|mobile\.ximalaya\.com)\/mobile-user\/v2\/artist/homePage/;
+var kiraaa = /https:\/\/(42.81\.\d+\.\d+|114\.80\.\d+\.\d+|140\.249\.\d+\.\d+|(mobile|m|mobwsa)\.ximalaya\.com)\/mobile-user\/v2\/homePage/;
+var kirabb = /https:\/\/(42.81\.\d+\.\d+|114\.80\.\d+\.\d+|140\.249\.\d+\.\d+|mobile\.ximalaya\.com)\/mobile-user\/v2\/artist/homePage/;
 
 if (kiraaa.test(url)) {
     var kira = JSON.parse($response.body);
