@@ -45,27 +45,24 @@ if (body) {
                 console.log("discovery-feed" + s);
             }
             break;
-
-        case /discovery-feed\/v\d\/mix/.test($request.url):
-            try {
-                let d = JSON.parse(body),
-                    o = new Set([1001, 1003, 1014, 4014, 1e5]);
-                if (d.header && d.header.length >= 2) {
-                    d.header[1].item.list = d.header[1].item.list.filter(e => o.has(e.id));
-                    for (let l = 0; l < d.header[1].item.list.length; l++)
-                        d.header[1].item.list[l].displayClass = "one_line";
-                    delete d.header[0];
-                } else if (d.header && d.header.length <= 1) {
-                    d.header[0].item.list = d.header[0].item.list.filter(e => o.has(e.id));
-                    for (let y = 0; y < d.header[0].item.list.length; y++)
-                        d.header[0].item.list[y].displayClass = "one_line";
-                }
-                d.body = d.body.filter(e => "ALBUM" == e.itemTypeEnum && !e.item.adInfo);
-                body = JSON.stringify(d);
-            } catch (c) {
-                console.log("discovery-feed:" + c);
-            }
-            break;
+                        
+          case /discovery-feed\/v\d\/mix/.test($request.url):
+              try {
+                  let d = JSON.parse(body);
+                  if (d.header && d.header.length >= 2) {
+                      for (let l = 0; l < d.header[1].item.list.length; l++)
+                          d.header[1].item.list[l].displayClass = "one_line";
+                      delete d.header[0];
+                  } else if (d.header && d.header.length <= 1) {
+                      for (let y = 0; y < d.header[0].item.list.length; y++)
+                          d.header[0].item.list[y].displayClass = "one_line";
+                  }
+                  d.body = d.body.filter(e => "ALBUM" == e.itemTypeEnum && !e.item.adInfo);
+                  body = JSON.stringify(d);
+              } catch (c) {
+                  console.log("discovery-feed:" + c);
+              }
+              break;
                         
         default:
             $done({});
