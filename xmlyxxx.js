@@ -164,7 +164,6 @@ if (kiraaa.test(url)) {
     var kira = JSON.parse($response.body);
     var kirass = kira.data;
     var kiravv = kirass.xiaoyaGradeInfo;
-    kiravv.grade = 10;
     kirass.mvpGrade = 10;
     kirass.xiaoyaGradeInfo = kiravv;
     var kiraii = kirass.vipInfo;
