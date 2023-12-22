@@ -9,15 +9,14 @@
           本脚本仅供学习交流使用，禁止转载、售卖
           🎇🎇🎇
 
-************/
+
 
 [rewrite_local]
 ^https?:\/\/api-production\.endel\.io\/v\d\/call url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/CrackVip/Endel.js
 
 [mitm]
 hostname = api-production.endel.io
-
-*************************************/
+************/
 
 
 var kira = JSON.parse($response.body);
