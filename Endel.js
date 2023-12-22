@@ -1,9 +1,9 @@
 /************
 > 脚本名称：Endel+解锁订阅
-> 软件版本：5.9.319
-> 脚本作者：ios151
+> 软件版本：4.38.2
+> 脚本作者：ios51
 > 解锁说明：每次使用需要开启！
-> 更新时间：2023-12-2
+> 更新时间：2023-12-23
 > 特别提醒：如需转载请注明出处，谢谢合作！
 > 使用声明：🎇🎇🎇
           本脚本仅供学习交流使用，禁止转载、售卖
@@ -12,11 +12,12 @@
 
 
 [rewrite_local]
-^https?:\/\/api-production\.endel\.io\/v\d\/call url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/CrackVip/Endel.js
+^https?:\/\/api-production\.endel\.io\/v\d\/call url script-response-body https://raw.githubusercontent.com/kira/Rewrite/main/Endel.js
 
 [mitm]
 hostname = api-production.endel.io
-************/
+
+*************************************/
 
 
 var kira = JSON.parse($response.body);
