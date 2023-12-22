@@ -12,7 +12,7 @@
 
 
 [rewrite_local]
-^https?:\/\/api-production\.endel\.io\/v\d\/call url script-response-body https://raw.githubusercontent.com/kira/Rewrite/main/Endel.js
+^https?:\/\/api-production\.endel\.io\/v\d\/call url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/CrackVip/Endel.js
 
 [mitm]
 hostname = api-production.endel.io
