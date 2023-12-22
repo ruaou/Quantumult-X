@@ -57,7 +57,6 @@ HOST, advertising.apple.com, REJECT
 HOST, api-adservices.apple.com, REJECT
 HOST, apple.comscoreresearch.com, REJECT
 HOST, banners.itunes.apple.com, REJECT
-HOST, iad.apple.com, REJECT
 HOST, iadcontent.apple.com, REJECT
 HOST, iadctest.qwapi.com, REJECT
 HOST, iadmoo.apple.com, REJECT
