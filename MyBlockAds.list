@@ -52,21 +52,6 @@ IP-CIDR, 203.107.1.1/24, REJECT
 # > 爱奇艺
 HOST, api.iqiyi.com, REJECT
 
-# > Apple
-HOST, advertising.apple.com, REJECT
-HOST, api-adservices.apple.com, REJECT
-HOST, apple.comscoreresearch.com, REJECT
-HOST, banners.itunes.apple.com, REJECT
-HOST, iadcontent.apple.com, REJECT
-HOST, iadctest.qwapi.com, REJECT
-HOST, iadmoo.apple.com, REJECT
-HOST, iadworkbench.apple.com, REJECT
-HOST, launch.apple.com, REJECT
-HOST, qwapi.apple.com, REJECT
-HOST-SUFFIX, advp.apple.com, REJECT
-HOST-SUFFIX, iad-apple.com, REJECT
-HOST-SUFFIX, iadsdk.apple.com, REJECT
-
 # > 安全浏览限制解除
 HOST, lookup.api.bsb.baidu.com, REJECT
 HOST-SUFFIX, u3.ucweb.com, REJECT
