@@ -161,7 +161,6 @@ HOST, tpns.qq.com, REJECT
 HOST, vv6.video.qq.com, REJECT
 HOST-SUFFIX, gdt.qq.com, REJECT
 HOST-SUFFIX, l.qq.com, REJECT
-HOST-KEYWORD, trace.qq.com, REJECT
 HOST-KEYWORD, trace.video.qq.com, REJECT
 IP-CIDR, 47.110.187.87/32, REJECT
 
