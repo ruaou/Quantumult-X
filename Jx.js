@@ -21,6 +21,9 @@ hostname = api.tipsoon.com
 
 ************/
 
-body = $response.body.replace(/\"is_vip":\w+/g, '\"is_vip":true')
+var body = $response.body;
+body = body.replace(/\"is_vip":\w+/g, '\"is_vip":true');
+body = body.replace(/"vip_expire_time":\s*".*?"/, '"vip_expire_time": "2099-10-01 01:01:01"');
 
-$done({body});
+$done({ body: body });
+
