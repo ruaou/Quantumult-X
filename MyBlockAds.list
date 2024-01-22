@@ -39,10 +39,10 @@
 
 # ======= 0：======= #
 # > bilibili精简内存
-host,upos-sz-staticcos.bilivideo.com,reject
+host,upos-sz-staticcos.bilivideo.com, REJECT
 
 # > 小红书精简内存
-host,fe-static.xhscdn.com,reject
+host,fe-static.xhscdn.com, REJECT
 
 # ======= A ======= #
 # > 阿里巴巴
