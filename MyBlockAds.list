@@ -149,7 +149,7 @@ IP6-CIDR, 2402:db40:5100:1011::5/128, REJECT
 HOST, statics.woozooo.com, REJECT
 
 # > 两步路
-host-suffix, admobile.top url reject
+host-suffix, admobile.top, REJECT
 
 # ======= M ======= #
 # > 美团
