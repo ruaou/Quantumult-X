@@ -18,5 +18,6 @@ hostname = ios-api-2.duolingo.cn
 %¥
 *******************************/
 var body=$response.body;
-body = body.replace(/gems\\"\:\d+/g,'gems\\\":99998');
+body = body.replace(/timerBoosts\\"\:\d+/g,'timerBoosts\\\":50');
+body = body.replace(/gems\\"\:\d+/g,'gems\\\":21001');
 $done(body);
