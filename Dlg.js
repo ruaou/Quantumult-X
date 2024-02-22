@@ -11,7 +11,7 @@
 *******************************
 
 [rewrite_local]
-^https?:\/\/ios-api-2\.duolingo\.cn\/2017-06-30\/batch.*? url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/CrackVip/Dlg.js
+^https:\/\/ios-api-2\.duolingo\.cn\/2023-05-23\/batch url script-response-body https://raw.githubusercontent.com/ruaou/Quantumult-X/CrackVip/Dlg.js
 
 [mitm]
 hostname = ios-api-2.duolingo.cn
